@@ -8,9 +8,9 @@
 <body>
     <h2>Camiones registrados</h2>
 
-    <a href="/SiGeRu/components/controlador/registroControlador/registrarCamControlador.php">+ Registrar nuevo camión</a>
-    <a href="/SiGeRu/components/controlador/listadoControlador/ListarUsuControlador.php">Ver usuarios registrados</a>
-    <a href="/SiGeRu/components/controlador/listadoControlador/ListarContControlador.php">Ver Contenedores registrados</a>
+    <a href="/SiGeRuCSS+/components/controlador/registroControlador/registrarCamControlador.php">+ Registrar nuevo camión</a>
+    <a href="/SiGeRuCSS+/components/controlador/listadoControlador/ListarUsuControlador.php">Ver usuarios registrados</a>
+    <a href="/SiGeRuCSS+/components/controlador/listadoControlador/ListarContControlador.php">Ver Contenedores registrados</a>
 
     <br><br>
     <table border="1" cellpadding="8" cellspacing="0">

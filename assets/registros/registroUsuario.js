@@ -32,7 +32,7 @@ document.getElementById("formUsuario").addEventListener("submit", async (e) => {
         }
 
         try {
-            const resp = await fetch("/SiGeRu/components/controlador/registroControlador/registroUsuControlador.php", ({
+            const resp = await fetch("/SiGeRuCSS+/components/controlador/registroControlador/registroUsuControlador.php", ({
                 method: "POST",
                 body: new FormData(e.target)
             }));
@@ -47,7 +47,7 @@ document.getElementById("formUsuario").addEventListener("submit", async (e) => {
                 msg.style.color = "green";
 
                 setTimeout(() => {
-                    window.location.href = "/SiGeRu/components/vista/ingresoVista/loginVista.html";
+                    window.location.href = "/SiGeRuCSS+/components/vista/ingresoVista/loginVista.html";
                 }, 2000);
             } else {
                 msg.textContent = data.error;

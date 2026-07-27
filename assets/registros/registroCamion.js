@@ -1,4 +1,4 @@
-document.getElementById("formCamion").addEventListener("submit", async (e) => {
+﻿document.getElementById("formCamion").addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const msg = document.getElementById("msg");
@@ -12,7 +12,7 @@ document.getElementById("formCamion").addEventListener("submit", async (e) => {
     }
 
     if (!/^[A-Za-z]{3}\d{4}$/.test(matricula)) {
-        msg.textContent = "La matricula debe tener 3 letras y 4 números."
+        msg.textContent = "La matricula debe tener 3 letras y 4 nuÌmeros."
         msg.style.color = "red"
         return;
     }
@@ -24,7 +24,7 @@ document.getElementById("formCamion").addEventListener("submit", async (e) => {
     }
 
     try {
-        const resp = await fetch("/SiGeRu/components/controlador/registroControlador/registrarCamControlador.php", ({
+        const resp = await fetch("/SiGeRuCSS+/components/controlador/registroControlador/registrarCamControlador.php", ({
             method: "POST",
             body: new FormData(e.target)
         }));
@@ -35,11 +35,11 @@ document.getElementById("formCamion").addEventListener("submit", async (e) => {
     
         if (data.ok) {
             e.target.reset();
-            msg.textContent = "Camión registrado correctamente";
+            msg.textContent = "CamioÌn registrado correctamente";
             msg.style.color = "green";
 
         setTimeout(() => {
-            window.location.href = "/SiGeRu/components/controlador/listadoControlador/listarCamControlador.php";
+            window.location.href = "/SiGeRuCSS+/components/controlador/listadoControlador/listarCamControlador.php";
         }, 2000);
         } else {
             msg.textContent = data.error;

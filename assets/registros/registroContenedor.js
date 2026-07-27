@@ -25,7 +25,7 @@ document.getElementById("formCont").addEventListener("submit", async (e) => {
     }
 
     try {
-        const resp = await fetch("/SiGeRu/components/controlador/registroControlador/registrarContControlador.php", ({
+        const resp = await fetch("/SiGeRuCSS+/components/controlador/registroControlador/registrarContControlador.php", ({
             method: "POST",
             body: new FormData(e.target)
         }));
@@ -40,7 +40,7 @@ document.getElementById("formCont").addEventListener("submit", async (e) => {
             msg.style.color = "green";
 
         setTimeout(() => {
-            window.location.href = "/SiGeRu/components/controlador/listadoControlador/listarContControlador.php";
+            window.location.href = "/SiGeRuCSS+/components/controlador/listadoControlador/listarContControlador.php";
         }, 2000);
         } else {
             msg.textContent = data.error;

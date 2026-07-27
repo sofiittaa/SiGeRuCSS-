@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,9 +7,9 @@
 <body>
     <h2>Usuarios registrados</h2>
 
-    <a href="/SiGeRu/components/controlador/registroControlador/registroUsuControlador.php">+ Registrar nuevo usuario</a>
-    <a href="/SiGeRu/components/controlador/listadoControlador/ListarCamControlador.php">Ver camiones registrados</a>
-    <a href="/SiGeRu/components/controlador/listadoControlador/ListarContControlador.php">Ver Contenedores registrados</a>
+    <a href="/SiGeRuCSS+/components/controlador/registroControlador/registroUsuControlador.php">+ Registrar nuevo usuario</a>
+    <a href="/SiGeRuCSS+/components/controlador/listadoControlador/ListarCamControlador.php">Ver camiones registrados</a>
+    <a href="/SiGeRuCSS+/components/controlador/listadoControlador/ListarContControlador.php">Ver Contenedores registrados</a>
 
 
     <br><br>
